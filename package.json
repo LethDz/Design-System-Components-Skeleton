@@ -7,7 +7,7 @@
     "components"
   ],
   "author": "lethDz",
-  "homepage": "https://github.com/LethDz/Mono-Repo-FE#readme",
+  "homepage": "https://github.com/LethDz/Design-System-Components-Skeleton#readme",
   "license": "MIT",
   "main": "lib/index.js",
   "directories": {
@@ -20,12 +20,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LethDz/Mono-Repo-FE.git"
+    "url": "git+https://github.com/LethDz/Design-System-Components-Skeleton.git"
   },
   "scripts": {
     "test": "node ./__tests__/react-components.test.js"
   },
   "bugs": {
-    "url": "https://github.com/LethDz/Mono-Repo-FE/issues"
+    "url": "https://github.com/LethDz/Design-System-Components-Skeleton/issues"
   }
 }
