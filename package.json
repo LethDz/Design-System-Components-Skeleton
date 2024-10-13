@@ -23,9 +23,36 @@
     "url": "git+https://github.com/LethDz/Design-System-Components-Skeleton.git"
   },
   "scripts": {
-    "test": "node ./__tests__/react-components.test.js"
+    "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}' --fix",
+    "prettier": "prettier --write .",
+    "prepare": "husky",
+    "test": "echo \"No Test are performed\""
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "bugs": {
     "url": "https://github.com/LethDz/Design-System-Components-Skeleton/issues"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.12.0",
+    "@types/node": "22.7.5",
+    "@types/react": "18.3.11",
+    "@typescript-eslint/eslint-plugin": "^8.8.1",
+    "@typescript-eslint/parser": "^8.8.1",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react": "^7.37.1",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "globals": "^15.11.0",
+    "husky": "^9.1.6",
+    "lint-staged": "^15.2.10",
+    "prettier": "^3.3.3",
+    "react": "^18.3.1",
+    "typescript": "^5.5.4",
+    "typescript-eslint": "^8.8.1"
   }
 }
