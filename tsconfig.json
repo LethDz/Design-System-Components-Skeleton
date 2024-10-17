@@ -1,29 +1,38 @@
 {
   "compilerOptions": {
-    "target": "ES5",
+    "target": "ESNext",
     "baseUrl": "src/",
     "paths": {
       "@atoms/*": [
-        "atoms/*"
+        "atoms/*",
       ]
     },
     "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
+      "DOM",
+      "DOM.Iterable",
+      "ESNext"
     ],
     "forceConsistentCasingInFileNames": true,
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
     "noEmit": true,
-    "incremental": true,
+    "incremental": false,
     "module": "esnext",
     "esModuleInterop": true,
     "moduleResolution": "node",
     "resolveJsonModule": true,
-    "isolatedModules": true,
-    "jsx": "react-jsx",
+    "isolatedModules": false,
+    "sourceMap": true,
+    "jsx": "react",
+    "declaration": true,
+    "declarationDir": "dist/types",
+    "emitDeclarationOnly": true,
   },
   "include": [
     "src"
