@@ -5,6 +5,9 @@
     "paths": {
       "@atoms/*": [
         "atoms/*",
+      ],
+      "@foundation/*": [
+        "foundation/*",
       ]
     },
     "lib": [
@@ -30,9 +33,7 @@
     "isolatedModules": false,
     "sourceMap": true,
     "jsx": "react",
-    "declaration": true,
-    "declarationDir": "dist/types",
-    "emitDeclarationOnly": true,
+    "declarationMap": false
   },
   "include": [
     "src"
@@ -41,5 +42,12 @@
     "node_modules",
     "build",
     "dist"
-  ]
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
+    }
+  }
 }

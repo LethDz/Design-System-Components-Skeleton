@@ -1,2 +1,3 @@
 import Button, { ButtonProps } from '@atoms/Button/Button';
-export { Button, ButtonProps };
+
+export { Button, type ButtonProps };

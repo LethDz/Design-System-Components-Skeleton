@@ -1,17 +1,26 @@
 'use client';
 import React from 'react';
 
-export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   label: string;
 }
 
-const Button: React.FunctionComponent<ButtonProps> = ({ label, ...props }) => {
+/**
+ * A functional component that renders a button.
+ *
+ * @param {ButtonProps} props - The props for the button component.
+ * @returns {React.ReactElement} A React element representing the button component.
+ */
+const Button: React.FunctionComponent<ButtonProps> = ({
+  label,
+  ...props
+}: ButtonProps): React.ReactElement => {
   return (
     <button
-      onClick={(e) => {
+      type='button'
+      onClick={(e: React.MouseEvent<HTMLButtonElement>) => {
         console.log(e.currentTarget.labels);
       }}
-      type='button'
       {...props}
     >
       {label}
@@ -19,4 +28,4 @@ const Button: React.FunctionComponent<ButtonProps> = ({ label, ...props }) => {
   );
 };
 
-export default Button;
+export { Button as default, type ButtonProps };
