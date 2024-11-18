@@ -13,6 +13,7 @@ interface TextProps extends React.HTMLAttributes<HTMLParagraphElement> {
  */
 const Text: React.FC<TextProps> = ({ size = 'base', ...props }: TextProps): React.ReactElement => {
   const className = `dse-text-${size}`;
+  className.concat(' ' + props.className || '');
   return (
     <p
       className={className}

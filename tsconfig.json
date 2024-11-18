@@ -6,6 +6,9 @@
       "@atoms/*": [
         "atoms/*",
       ],
+      "@molecules/*": [
+        "molecules/*",
+      ],
       "@foundation/*": [
         "foundation/*",
       ]
@@ -36,7 +39,9 @@
     "declarationMap": false
   },
   "include": [
-    "src"
+    "src",
+    "./jest.config.ts",
+    "./jest.setup.ts"
   ],
   "exclude": [
     "node_modules",
@@ -49,5 +54,5 @@
       "require": "./dist/index.js",
       "import": "./dist/index.mjs"
     }
-  }
+  },
 }
